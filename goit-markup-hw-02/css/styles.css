@@ -1,0 +1,294 @@
+
+
+:root{
+  /* logo */
+    --logo-web: #2196F3;
+    --logo-studio-header: #000000;
+    --logo-studio-footer: #FFFFFF;
+
+/* header */
+    --background-color-header: #FFFFFF;
+    --text-color-header-menu: #212121;
+    --text-color-contact-header:  #757575;
+
+  /* footer */
+    --background-color-footer:  #2F303A;
+    --text-color-address-footer: #FFFFFF;
+    --text-color-contact-footer:  rgba(255, 255, 255, 0.6);
+  /* on all pages */
+    --background-color: #e5e5e5;
+    --background-color-ourteam:  #F5F4FA;
+    --text-highlighted-link:  #2196F3;
+    --text-color: #757575;
+    --text-color-all-headers: #212121;
+   
+  /* pierwsza, górna część strony gł - Efektywne rozwiazania.. */
+    
+    --background-color-toppart: #2F303A;
+    --text-toppart-header: #FFFFFF;
+    --button-text-order:  #FFFFFF;
+    --button-background-order:  #2196F3;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    /*zakladka portfolio = wybierane menu-> przyciski  */
+    --button-background-portfolio:  #F5F4FA;
+    --button-background-highlighted-por:  #2196F3;
+    --button-text-portfolio:  #212121;
+    --button-text-highlighted-por:  #FFFFFF;
+
+
+}
+
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+header {
+  background: var(--background-color-header);
+}
+footer {
+  background-color: var(--background-color-footer);
+}
+a {
+  text-decoration: none;
+}
+/* przyciski  w zakladce Portfolio */
+.button:hover,
+.button:focus {
+  background-color: var(--button-background-highlighted-por);
+  color: var(--button-text-highlighted-por);
+}
+/* LOGO */
+.logo {
+  font-weight: 700;
+  background-color: none;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03;
+  
+}
+.logo-web {
+  color: var(--logo-web);
+  background-color: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03;
+  display: inline-block;
+}
+.logo-studio {
+  color: var(--logo-studio-header);
+  background-color: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03;
+  display: inline-block;
+}
+.logo-studio-footer {
+  color: var(--logo-studio-footer);
+  background-color: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03;
+}
+
+
+
+
+
+.navigation-link {
+  /* font-family: Roboto; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02;
+  color:var(--text-color-header-menu);
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--text-highlighted-link) ;
+}
+/*  podswietlenie biezacej strony - portoflio*/
+.portfolio {
+  color: var(--text-highlighted-link);
+}
+/*  kontakt header (mail, telefon)!*/
+.mail-header {
+  color: var(--text-color-contact-header);
+  font-size: 14px;
+}
+
+.telephone-header {
+  color: var(--text-color-contact-header);
+  font-size: 14px;
+}
+/*  konktakt - telefon, mail - po najechaniu kursorem */
+.mail-header:hover,
+.mail-header:focus {
+  color: var(--text-highlighted-link);
+}
+.telephone-header:hover,
+.telephone-header:focus {
+  color: var(--text-highlighted-link);
+}
+/* git */
+.address {
+  text-decoration: none;
+  background: var(--background-color-footer);
+}
+.portfolio-fig,
+.address,
+.navigation,
+.button-por,
+.ourteam,
+.work
+{
+  list-style: none;
+}
+/* git */
+.address-linkf {
+  color: var(--text-color-contact-footer);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03;
+}
+/* git */
+.street {
+  color: var(--text-color-address-footer);
+  line-height: 1.71;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* git */
+.address-linkf:hover,
+.address-linkf:focus {
+  color: var(--text-highlighted-link);
+}
+.logo-studio-footer {
+  color: var(--text-color-address-footer);
+}
+/* czesc - "EFETYWNE ROZWIAZANIA..*/
+.solution-header {
+  color: var(--text-toppart-header);
+  background-color: var(--background-color-toppart);
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+}
+/* przycisk - zamów usługę */
+.button-order {
+  color: var(--button-text-order);
+  background-color: var(--button-background-order);
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  line-height: 1.88;
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+}
+
+.mail-header,
+.telephone-header {
+  color: var(--text-color-contact-header);
+}
+
+/* INDEX.HTML t- dotyczy tekstu i naglowków na glownej stronie index.html*/
+.text-header {
+  color: var(--text-color-all-headers);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.text-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* index.html - czym sie zajmujemy */
+.header-work {
+  color: var(--text-color-all-headers);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.header-team {
+  color: var(--text-color-all-headers);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.ourteam-person {
+  color: var(--text-color-all-headers);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+.ourteam-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  /* color: #757575; */
+}
+/* PORTFOLIO.HTML**********************************************************************PORTFOLIO */
+/*PORTOFLIO.HTML portfolio-figure - klasa do opisu zdjec+naglowkow w zakladce - portfolio */
+.header-por {
+  color: var(--text-color-all-headers);
+  font-weight: 700;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.description-por {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  /* color: #757575; */
+}
+.button--menu {
+  color: var(--button-text-portfolio);
+  background-color: var(--button-background-portfolio);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.03;
+  line-height: 1.63;
+  
+}
+.button-por > li :hover {
+  background-color: var(--button-background-highlighted-por);
+  color: var(--button-text-highlighted-por);
+}
+button:focus {
+  background-color: var(--button-background-highlighted-por);
+  color: var(--button-text-highlighted-por);
+}
+
+
